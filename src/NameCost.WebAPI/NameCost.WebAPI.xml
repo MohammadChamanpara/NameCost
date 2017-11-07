@@ -53,7 +53,7 @@
             </summary>
             <param name="logic">The logic to be used while generating words for the number.</param>
         </member>
-        <member name="M:NameCost.WebAPI.Controllers.ConvertController.Convert(NameCost.Core.NameCostModel)">
+        <member name="M:NameCost.WebAPI.Controllers.ConvertController.Convert(NameCost.Core.Models.NameCostModel)">
             <summary>
             Converts the cost number to words.
             </summary>

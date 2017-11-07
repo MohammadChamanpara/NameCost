@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NameCost.Core
+namespace NameCost.Core.Models
 {
 	/// <summary>
 	/// This models servers as DomainModel and ViewModel in this application
@@ -20,6 +20,7 @@ namespace NameCost.Core
 		/// <value>
 		/// The calculated short URL.
 		/// </value>
+		[Required]
 		[Display(Name = "Person Name")]
 		public string Name { get; set; }
 
@@ -29,7 +30,8 @@ namespace NameCost.Core
 		/// <value>
 		/// The cost in number format.
 		/// </value>
-		
+
+		[Required]
 		[Display(Name ="Cost")]
 		public decimal Cost { get; set; }
 

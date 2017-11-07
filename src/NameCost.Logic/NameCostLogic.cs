@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NameCost.Core;
+﻿using NameCost.Core.Models;
 
 namespace NameCost.Logic
 {

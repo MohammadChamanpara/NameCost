@@ -1,0 +1,19 @@
+﻿@model NameCost.Core.Models.NameCostModel
+
+@{
+    ViewBag.Title = "Output";
+}
+
+<h2>Convert number to words</h2>
+
+
+<div class="form-horizontal">
+    <hr />
+    @Html.DisplayTextFor(model => model.Name)
+    <br />
+    @Html.DisplayTextFor(model => model.CostInWords)
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

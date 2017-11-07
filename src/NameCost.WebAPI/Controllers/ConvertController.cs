@@ -1,10 +1,5 @@
-﻿using NameCost.Core;
+﻿using NameCost.Core.Models;
 using NameCost.Logic;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using System.Web.Routing;
