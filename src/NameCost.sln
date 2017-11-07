@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NameCost.Tests", "NameCost.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NameCost", "NameCost", "{106F1281-DC86-4617-BD54-E87DCE624DBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameCost.UI.Tests", "NameCost.UITests\NameCost.UI.Tests.csproj", "{800665BB-0243-457D-AB2B-E4F079E088B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{908500BC-0A98-4121-B250-12D00201A265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{908500BC-0A98-4121-B250-12D00201A265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{908500BC-0A98-4121-B250-12D00201A265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{800665BB-0243-457D-AB2B-E4F079E088B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800665BB-0243-457D-AB2B-E4F079E088B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800665BB-0243-457D-AB2B-E4F079E088B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800665BB-0243-457D-AB2B-E4F079E088B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{99EBE016-1112-4CA4-A71B-93CFBE0A3435} = {106F1281-DC86-4617-BD54-E87DCE624DBB}
 		{1C328D4F-444E-4C8A-9045-87CDAB0E6EE3} = {106F1281-DC86-4617-BD54-E87DCE624DBB}
 		{908500BC-0A98-4121-B250-12D00201A265} = {1BE10E22-9456-4423-80D6-2E2284D69D5C}
+		{800665BB-0243-457D-AB2B-E4F079E088B1} = {1BE10E22-9456-4423-80D6-2E2284D69D5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3302ACD7-B29A-45BB-A1DE-E6B0C1A61E2E}
