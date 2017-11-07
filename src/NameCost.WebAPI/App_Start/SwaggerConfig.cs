@@ -7,9 +7,15 @@ using Swashbuckle.Application;
 
 namespace NameCost.WebAPI
 {
-    public class SwaggerConfig
+	/// <summary>
+	/// 
+	/// </summary>
+	public class SwaggerConfig
     {
-        public static void Register()
+		/// <summary>
+		/// Registers this instance.
+		/// </summary>
+		public static void Register()
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
 

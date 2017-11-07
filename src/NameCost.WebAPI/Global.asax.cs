@@ -9,8 +9,15 @@ using System.Web.Routing;
 
 namespace NameCost.WebAPI
 {
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <seealso cref="System.Web.HttpApplication" />
 	public class WebApiApplication : System.Web.HttpApplication
 	{
+		/// <summary>
+		/// Starts the Applications.
+		/// </summary>
 		protected void Application_Start()
 		{
 			AreaRegistration.RegisterAllAreas();

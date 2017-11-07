@@ -4,6 +4,49 @@
         <name>NameCost.WebAPI</name>
     </assembly>
     <members>
+        <member name="T:NameCost.WebAPI.BundleConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NameCost.WebAPI.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)">
+            <summary>
+            Registers the bundles.
+            </summary>
+            <param name="bundles">The bundles.</param>
+        </member>
+        <member name="T:NameCost.WebAPI.FilterConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NameCost.WebAPI.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)">
+            <summary>
+            Registers the global filters.
+            </summary>
+            <param name="filters">The filters.</param>
+        </member>
+        <member name="T:NameCost.WebAPI.RouteConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NameCost.WebAPI.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)">
+            <summary>
+            Registers the routes.
+            </summary>
+            <param name="routes">The routes.</param>
+        </member>
+        <member name="T:NameCost.WebAPI.SwaggerConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NameCost.WebAPI.SwaggerConfig.Register">
+            <summary>
+            Registers this instance.
+            </summary>
+        </member>
         <member name="T:NameCost.WebAPI.UnityConfig">
             <summary>
             Specifies the Unity configuration for the main container.
@@ -41,6 +84,17 @@
             Disposes the Unity container when the application is shut down.
             </summary>
         </member>
+        <member name="T:NameCost.WebAPI.WebApiConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NameCost.WebAPI.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Registers the specified configuration.
+            </summary>
+            <param name="config">The configuration.</param>
+        </member>
         <member name="T:NameCost.WebAPI.Controllers.ConvertController">
             <summary>
             The main controller of the NameCost web api project
@@ -59,6 +113,17 @@
             </summary>
             <param name="nameCost">The parameter to provide the number to be converted to words.</param>
             <returns>A model containing the generated words for the numbers</returns>
+        </member>
+        <member name="T:NameCost.WebAPI.WebApiApplication">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:System.Web.HttpApplication" />
+        </member>
+        <member name="M:NameCost.WebAPI.WebApiApplication.Application_Start">
+            <summary>
+            Starts the Applications.
+            </summary>
         </member>
     </members>
 </doc>
