@@ -9,6 +9,6 @@ namespace NameCost.Logic
 {
 	public interface INameCostLogic
 	{
-		void ConvertCostToWords(NameCostModel nameCost);
+		void GenerateWords(NameCostModel nameCost);
 	}
 }
