@@ -18,23 +18,16 @@ namespace NameCost.WebAPI.Controllers
 			this.Logic = logic;
 		}
 
-		// GET api/<controller>
-		[Route("api/convert")]
-		public NameCostModel Convert(NameCostModel nameCost)
+		/// <summary>
+		/// Converts the cost number to words.
+		/// </summary>
+		/// <param name="nameCost">The parameter to provide the cost.</param>
+		/// <returns>A model containing the generated words for the costs</returns>
+		[Route("api/generate")]
+		public NameCostModel GenerateWords(NameCostModel nameCost)
 		{
 			Logic.GenerateWords(nameCost);
 			return nameCost;
-		}
-
-		// GET api/<controller>/5
-		public string Get(int id)
-		{
-			return "value";
-		}
-
-		// POST api/<controller>
-		public void Post([FromBody]string value)
-		{
 		}
 	}
 }
