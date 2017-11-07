@@ -15,9 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameCost.Core", "NameCost.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameCost.Logic.Tests", "NameCost.Logic.Tests\NameCost.Logic.Tests.csproj", "{908500BC-0A98-4121-B250-12D00201A265}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{1BE10E22-9456-4423-80D6-2E2284D69D5C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NameCost.Tests", "NameCost.Tests", "{1BE10E22-9456-4423-80D6-2E2284D69D5C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{106F1281-DC86-4617-BD54-E87DCE624DBB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NameCost", "NameCost", "{106F1281-DC86-4617-BD54-E87DCE624DBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
