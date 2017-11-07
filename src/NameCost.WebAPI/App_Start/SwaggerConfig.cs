@@ -253,7 +253,7 @@ namespace NameCost.WebAPI
         }
 		private static string GetXmlCommentsPath()
 		{
-			return string.Format(@"{0}\UrlShortener.WebApi.XML", System.AppDomain.CurrentDomain.BaseDirectory);
+			return string.Format(@"{0}\NameCost.WebApi.XML", System.AppDomain.CurrentDomain.BaseDirectory);
 		}
 	}
 }
