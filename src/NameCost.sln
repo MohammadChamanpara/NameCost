@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameCost", "NameCost\NameCost.csproj", "{7FA1EE8B-EBA9-4403-BF16-EB549EC1562F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameCost.UI", "NameCost.UI\NameCost.UI.csproj", "{7FA1EE8B-EBA9-4403-BF16-EB549EC1562F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameCost.WebAPI", "NameCost.WebAPI\NameCost.WebAPI.csproj", "{2D770EFF-F92B-4342-9377-A72ABAB1B1E4}"
 EndProject
