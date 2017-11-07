@@ -48,7 +48,7 @@ namespace NameCost.Controllers
 		[HttpGet]
 		public ActionResult Output(NameCostModel model)
 		{
-			return View(model);
+			return View("output", model);
 		}
 	}
 }
