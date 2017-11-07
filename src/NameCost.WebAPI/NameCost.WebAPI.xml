@@ -41,12 +41,24 @@
             Disposes the Unity container when the application is shut down.
             </summary>
         </member>
-        <member name="M:NameCost.WebAPI.Controllers.ConvertController.GenerateWords(NameCost.Core.NameCostModel)">
+        <member name="T:NameCost.WebAPI.Controllers.ConvertController">
+            <summary>
+            The main controller of the NameCost web api project
+            </summary>
+            <seealso cref="T:System.Web.Http.ApiController" />
+        </member>
+        <member name="M:NameCost.WebAPI.Controllers.ConvertController.#ctor(NameCost.Logic.INameCostLogic)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NameCost.WebAPI.Controllers.ConvertController"/> class.
+            </summary>
+            <param name="logic">The logic to be used while generating words for the number.</param>
+        </member>
+        <member name="M:NameCost.WebAPI.Controllers.ConvertController.Convert(NameCost.Core.NameCostModel)">
             <summary>
             Converts the cost number to words.
             </summary>
-            <param name="nameCost">The parameter to provide the cost.</param>
-            <returns>A model containing the generated words for the costs</returns>
+            <param name="nameCost">The parameter to provide the number to be converted to words.</param>
+            <returns>A model containing the generated words for the numbers</returns>
         </member>
     </members>
 </doc>
