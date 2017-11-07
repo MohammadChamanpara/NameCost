@@ -1,18 +1,29 @@
-﻿using System;
+﻿using NameCost.Core;
+using NameCost.Logic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Routing;
 
 namespace NameCost.WebAPI.Controllers
 {
 	public class ConvertController : ApiController
 	{
-		// GET api/<controller>
-		public IEnumerable<string> Get()
+		INameCostLogic Logic;
+		public ConvertController(INameCostLogic logic)
 		{
-			return new string[] { "value1", "value2" };
+			this.Logic = logic;
+		}
+
+		// GET api/<controller>
+		[Route("api/convert")]
+		public NameCostModel Convert(NameCostModel nameCost)
+		{
+			Logic.GenerateWords(nameCost);
+			return nameCost;
 		}
 
 		// GET api/<controller>/5
