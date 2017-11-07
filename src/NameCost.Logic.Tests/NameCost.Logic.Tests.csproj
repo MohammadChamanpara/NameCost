@@ -57,12 +57,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CurrencyTests.cs" />
+    <Compile Include="NameCostLogicTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NameCost.Core\NameCost.Core.csproj">
+      <Project>{1C328D4F-444E-4C8A-9045-87CDAB0E6EE3}</Project>
+      <Name>NameCost.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NameCost.Logic\NameCost.Logic.csproj">
       <Project>{99ebe016-1112-4ca4-a71b-93cfbe0a3435}</Project>
       <Name>NameCost.Logic</Name>
