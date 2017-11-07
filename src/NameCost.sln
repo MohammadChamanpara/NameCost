@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameCost.Logic", "NameCost.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameCost.Core", "NameCost.Core\NameCost.Core.csproj", "{1C328D4F-444E-4C8A-9045-87CDAB0E6EE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameCost.Logic.Tests", "NameCost.Logic.Tests\NameCost.Logic.Tests.csproj", "{908500BC-0A98-4121-B250-12D00201A265}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1C328D4F-444E-4C8A-9045-87CDAB0E6EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C328D4F-444E-4C8A-9045-87CDAB0E6EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C328D4F-444E-4C8A-9045-87CDAB0E6EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{908500BC-0A98-4121-B250-12D00201A265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908500BC-0A98-4121-B250-12D00201A265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908500BC-0A98-4121-B250-12D00201A265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908500BC-0A98-4121-B250-12D00201A265}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
