@@ -121,6 +121,9 @@ namespace NameCost.Logic
 
 		private string NumberToWords(int number)
 		{
+			if (number == 0)
+				return Words[0];
+
 			if (number < 0)
 				return MinusText + NumberToWords(Math.Abs(number));
 
