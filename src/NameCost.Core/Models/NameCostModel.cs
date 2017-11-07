@@ -12,7 +12,7 @@ namespace NameCost.Core
 	/// for the sake of simplicity given the fact that the mentioned models 
 	/// had no or slight differences in terms of strucure.
 	/// </summary>
-	public class NameCost
+	public class NameCostModel
     {
 		/// <summary>
 		/// Gets or sets the Name property.
@@ -31,7 +31,7 @@ namespace NameCost.Core
 		/// </value>
 		
 		[Display(Name ="Cost")]
-		public float Cost { get; set; }
+		public decimal Cost { get; set; }
 
 		/// <summary>
 		/// Gets or sets the cost in words.
