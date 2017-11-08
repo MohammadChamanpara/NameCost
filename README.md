@@ -2,8 +2,17 @@
 A sample application which converts a currency number to words.  
 For example 123.45 will be converted to ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS
 
-## Convert a number into words
-  1. Visit the NameCost site at [namecost-ui.azurewebsites.net](http://namecost-ui.azurewebsites.net).
+## Give it a shot
+  1. Visit the NameCost site at [namecost-ui.azurewebsites.net](http://namecost-ui.azurewebsites.net).  
+  1. Write your number in the cost box.
+  1. Click Generate Words.
+  1. In a new page, you’ll see the words for your number.   
+  
+  Alternatively, you can take the following steps to run a local version:  
+  1. Download the source code.
+  1. Open the solution with Microsoft Visual Studio.
+  1. Set _NameCost.UI_ and _NameCost.WebAPI_ as multiple startup projects for the solution.  
+  1. Hit Ctrl+F5.
   1. Write your number in the cost box.
   1. Click Generate Words.
   1. In a new page, you’ll see the words for your number.   
@@ -11,7 +20,7 @@ For example 123.45 will be converted to ONE HUNDRED AND TWENTY-THREE DOLLARS AND
 ## Table of contents
 
   * [Name Cost, A number converter](#name-cost-a-number-converter)
-  * [Convert a number into words](#convert-a-number-into-words)
+  * [Give it a shot](#give-it-a-shot)
   * [Table of contents](#table-of-contents)  
   * [Implementation Notes](#implementation-notes)  
   * [Working Instance on Azure](#working-instance-on-azure)
@@ -69,7 +78,7 @@ A naming convention as _Method_Condition_ExpectedBahavior_ is utilized for namin
   1. __NameCost.UI.Tests__: unit tests of the UI project.  
   1. __NameCost.WebApi__: API of the application which is not used by any other layer and is ready to be consumed in any front end client.  
   1. __NameCost.WebApi.Tests__: unit tests of the API project.  
-  1. __NameCost.Logic__: this layer contains the url service, responsible for the business logic of the application.  
+  1. __NameCost.Logic__: this layer contains the NameCost logic, responsible for the business logic of the application.  
   1. __NameCost.Logic.Tests__: unit tests of the logic layer.   
       
   ![Structure](screenshots/SolutionStructure.png)  
