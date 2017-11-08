@@ -26,7 +26,7 @@ namespace NameCost.WebAPI.Controllers
 		/// Converts the cost number to words.
 		/// </summary>
 		/// <param name="nameCost">The parameter to provide the number to be converted to words.</param>
-		/// <returns>A model containing the generated words for the numbers</returns>
+		/// <returns>A model containing the generated words for the number</returns>
 		[Route("api/convert")]
 		[ResponseType(typeof(NameCostModel))]
 		[HttpPost]
@@ -36,6 +36,8 @@ namespace NameCost.WebAPI.Controllers
 			{
 				return BadRequest(ModelState);
 			}
+
+			//TODO: adopt neccessary measures to handle the probable exceptions from logic
 			Logic.GenerateWords(nameCost);
 
 			return Ok(nameCost);

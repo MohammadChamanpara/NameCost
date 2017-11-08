@@ -112,7 +112,7 @@
             Converts the cost number to words.
             </summary>
             <param name="nameCost">The parameter to provide the number to be converted to words.</param>
-            <returns>A model containing the generated words for the numbers</returns>
+            <returns>A model containing the generated words for the number</returns>
         </member>
         <member name="T:NameCost.WebAPI.WebApiApplication">
             <summary>
