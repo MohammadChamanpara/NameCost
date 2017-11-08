@@ -10,9 +10,15 @@ using System.Threading.Tasks;
 
 namespace NameCost.Logic.Tests
 {
+	/// <summary>
+	/// <see cref="NameCostLogic"/> Tests
+	/// </summary>
 	[TestClass()]
 	public class NameCostLogicTests
 	{
+		/// <summary>
+		/// GeneratesWords method should always initialize the <see cref="NameCostModel.CostInWords"/> property.
+		/// </summary>
 		[TestMethod()]
 		public void GenerateWords_Always_ShouldInitializeWords()
 		{
