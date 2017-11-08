@@ -1,4 +1,4 @@
-# NameCost
+# Name Cost, A number converter
 A sample application which converts a currency number to words.  
 For example 123.45 will be converted to ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS
 
@@ -10,7 +10,7 @@ For example 123.45 will be converted to ONE HUNDRED AND TWENTY-THREE DOLLARS AND
 
 ## Table of contents
 
-  * [Name Cost](#namecost)
+  * [Name Cost, A number converter](#name-cost-a-number-converter)
   * [Convert a number into words](#convert-a-number-into-words)
   * [Table of contents](#table-of-contents)  
   * [Implementation Notes](#implementation-notes)  
@@ -32,7 +32,7 @@ Dependency Injection is enabled thanks to the Microsoft Unity and some framework
 The logic of the application is injected in, using the strategy pattern. Currently, the implementation is based on using a currency class. This can be replaced with another approach in a convenient manner.  
   
 ## Working Instance on Azure
-A working instance of the Link application is deployed to a Microsoft Azure Web App and accessible via [namecost-ui.azurewebsites.net/](http://namecost-ui.azurewebsites.net/). The API of the application is also deployed to an API App and can be accessed and consumed by client applications via [namecost.azurewebsites.net](http://namecost.azurewebsites.net/)  
+A working instance of the Link application is deployed to a Microsoft Azure Web App and accessible via [namecost-ui.azurewebsites.net](http://namecost-ui.azurewebsites.net/). The API of the application is also deployed to an API App and can be accessed and consumed by client applications via [namecost.azurewebsites.net](http://namecost.azurewebsites.net/)  
   
 ![Azure Resources](screenshots/AzureResources.png)  
 
