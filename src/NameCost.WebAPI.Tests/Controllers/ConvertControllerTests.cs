@@ -15,9 +15,15 @@ using System.Web.Http.Results;
 
 namespace NameCost.WebAPI.Controllers.Tests
 {
+	/// <summary>
+	/// Unit tests for <see cref="ConvertController"/> class
+	/// </summary>
 	[TestClass()]
 	public class ConvertControllerTests
 	{
+		/// <summary>
+		/// Convert with a valid model should return ok with model parameter.
+		/// </summary>
 		[TestMethod()]
 		public void Convert_WithValidModel_ShouldReturnOkModel()
 		{
@@ -30,10 +36,15 @@ namespace NameCost.WebAPI.Controllers.Tests
 			IHttpActionResult actionResult = controller.Convert(model);
 
 			//Assert
-			actionResult.Should().BeOfType<OkNegotiatedContentResult<NameCostModel>>(because: "model is valid");
+			actionResult
+				.Should()
+				.BeOfType<OkNegotiatedContentResult<NameCostModel>>
+				(because: "model is valid");
 		}
 
-
+		/// <summary>
+		/// Convert with a valid model should call convert logic.
+		/// </summary>
 		[TestMethod()]
 		public void Convert_WithValidModel_ShouldCallConvertLogic()
 		{
@@ -46,9 +57,15 @@ namespace NameCost.WebAPI.Controllers.Tests
 			IHttpActionResult actionResult = controller.Convert(model);
 
 			//Assert
-			mockUrlLogic.Verify(x => x.GenerateWords(It.IsAny<NameCostModel>()), "valid model should reach logic");
+			mockUrlLogic.Verify(
+				x => 
+				x.GenerateWords(It.IsAny<NameCostModel>()),
+				"valid model should reach logic");
 		}
 
+		/// <summary>
+		/// Convert with an invalid model should not call convert logic.
+		/// </summary>
 		[TestMethod()]
 		public void Convert_WithInvalidModel_ShouldNotCallConvertLogic()
 		{
@@ -63,9 +80,16 @@ namespace NameCost.WebAPI.Controllers.Tests
 			IHttpActionResult actionResult = controller.Convert(model);
 
 			//Assert
-			mockUrlLogic.Verify(x => x.GenerateWords(It.IsAny<NameCostModel>()), Times.Never, "Invalid model should not reach logic");
+			mockUrlLogic.Verify(
+				x => 
+				x.GenerateWords(It.IsAny<NameCostModel>()), 
+				Times.Never, 
+				"Invalid model should not reach logic");
 		}
 
+		/// <summary>
+		/// Convert with an invalid model should return invalid model state result.
+		/// </summary>
 		[TestMethod()]
 		public void Convert_WithInvalidModel_ShouldReturnInvalidModelStateResult()
 		{
@@ -79,7 +103,10 @@ namespace NameCost.WebAPI.Controllers.Tests
 			IHttpActionResult actionResult = controller.Convert(model);
 
 			//Assert
-			actionResult.Should().BeOfType<InvalidModelStateResult>(because: "model is not valid");
+			actionResult
+				.Should()
+				.BeOfType<InvalidModelStateResult>
+				(because: "model is not valid");
 		}
 	}
 }
