@@ -13,9 +13,15 @@ using System.Web.Mvc;
 
 namespace NameCost.Controllers.Tests
 {
+	/// <summary>
+	/// <see cref="ConvertController"/> tests
+	/// </summary>
 	[TestClass()]
 	public class ConvertControllerTests
 	{
+		/// <summary>
+		/// Ouput Action should always return a view.
+		/// </summary>
 		[TestMethod()]
 		public void Ouput_Always_ShouldReturnView()
 		{
@@ -29,6 +35,10 @@ namespace NameCost.Controllers.Tests
 			//Assert
 			actionResult.Should().BeOfType<ViewResult>(because: "shorten get action should return view");
 		}
+
+		/// <summary>
+		/// Ouput Action should always return the output view.
+		/// </summary>
 		[TestMethod()]
 		public void Output_Always_ShouldReturnOutputView()
 		{
