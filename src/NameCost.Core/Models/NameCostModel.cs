@@ -21,7 +21,7 @@ namespace NameCost.Core.Models
 		/// The calculated short URL.
 		/// </value>
 		[Required]
-		[Display(Name = "Person Name")]
+		[Display(Name = "Name")]
 		public string Name { get; set; }
 
 		/// <summary>
