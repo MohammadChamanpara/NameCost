@@ -43,7 +43,7 @@ Azure Application insight has been employed for the application in order to diag
   
 ![Health](screenshots/AiHealth.png)  
   
-The custom logging mechanism of the application is also based on the Application Insights and collects traces, exceptions, and all the application events of various severities and sends to Azure Application Insights.  
+The logging mechanism of the application is also based on the Application Insights and collects traces, exceptions, and all the application events of various severities and sends to Azure Application Insights.  
   
 ![Logs](screenshots/AiLog.png)  
   
