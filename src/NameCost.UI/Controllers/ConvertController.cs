@@ -39,9 +39,9 @@ namespace NameCost.Controllers
 
 			using (var httpClient = new HttpClient())
 			{
-				//The Uri is temporarily hardcoded which is an extreamly bad practice.
-				//TODO: read Uri from configuration
-				httpClient.BaseAddress = new Uri("http://localhost:31331/");
+				var apiAddress = System.Configuration.ConfigurationManager.AppSettings["WebApiUri"];
+
+				httpClient.BaseAddress = new Uri(apiAddress);
 
 				var postTask = httpClient.PostAsJsonAsync("api/convert", model);
 				postTask.Wait();
