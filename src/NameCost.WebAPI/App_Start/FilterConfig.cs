@@ -14,7 +14,7 @@ namespace NameCost.WebAPI
 		/// <param name="filters">The filters.</param>
 		public static void RegisterGlobalFilters(GlobalFilterCollection filters)
 		{
-			filters.Add(new HandleErrorAttribute());
+			filters.Add(new ErrorHandler.AiHandleErrorAttribute());
 		}
 	}
 }
